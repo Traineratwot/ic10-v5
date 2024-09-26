@@ -1,0 +1,68 @@
+{
+  "name": "ic10",
+  "type": "module",
+  "version": "4.3.1",
+  "description": "ic10 interpreter",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./zodTypes": {
+      "import": "./dist/esm/ZodTypes.js",
+      "require": "./dist/cjs/ZodTypes.js"
+    }
+  },
+  "engines": {
+    "bun": ">=1.0.20",
+    "node": ">=20.10.0"
+  },
+  "scripts": {
+    "prepack": "npm run build",
+    "postpublish": "npm version patch",
+    "watch": "tsc -w",
+    "build:node": "bun build ./src/index.ts --outdir ./build --target node --minify",
+    "build:bun": "bun build ./src/index.ts --outdir ./build --target bun --minify",
+    "build:browser": "bun build ./src/index.ts --outdir ./build --minify",
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json && bun ./tools/build.ts",
+    "test": "bun test",
+    "nodemon": "nodemon src/tests/dev.ts",
+    "devTest": "bun tests/dev.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stationeers-ic/ic10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC BY-NC 4.0",
+  "bugs": {
+    "url": "https://github.com/Stationeers-ic/ic10/issues"
+  },
+  "exclude": [
+    ".idea",
+    ".vscode",
+    ".project-manager",
+    ".ic10"
+  ],
+  "homepage": "https://github.com/Stationeers-ic/ic10#readme",
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.5.1",
+    "@types/bun": "^1.1.1",
+    "@types/uuid": "^9.0.8",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "crc-32": "^1.2.2",
+    "eventemitter3": "^5.0.1",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  }
+}
