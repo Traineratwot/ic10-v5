@@ -24,13 +24,12 @@ describe("Lib/Store", () => {
 			testStr: string
 			testBool: boolean
 		}>()
-		let newNum = null
-		let newStr = null
-		let newBool = null
+		let newNum: any = null
+		let newStr: any = null
+		let newBool: any = null
 		store.add("testNum", 0, (value) => (newNum = value))
 		store.add("testStr", "", (value) => (newStr = value))
 		store.add("testBool", false, (value) => (newBool = value))
-
 
 		await new Promise<void>((resolve) => {
 			setTimeout(() => {
@@ -42,9 +41,9 @@ describe("Lib/Store", () => {
 		})
 		await new Promise<void>((resolve) => {
 			setTimeout(() => {
-				expect(store.get("testNum")).toBe(2)
-				expect(store.get("testStr")).toBe("test")
-				expect(store.get("testBool")).toBe(true)
+				expect(newNum).toBe(2)
+				expect(newStr).toBe("test")
+				expect(newBool).toBe(true)
 				resolve()
 			}, 5)
 		})
