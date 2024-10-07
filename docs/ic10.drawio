@@ -1,12 +1,12 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="Страница — 1" id="UjBPNbF5Juh3DCR17DNx">
-    <mxGraphModel dx="988" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="1">
+    <mxGraphModel dx="798" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="10000" pageHeight="10000" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PQDEgTjOGFEBHPcHPmps-68" value="ic10 сокет" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
-          <mxGeometry x="40" y="50" width="840" height="1000" as="geometry">
-            <mxRectangle x="40" y="40" width="100" height="30" as="alternateBounds" />
+        <mxCell id="PQDEgTjOGFEBHPcHPmps-68" value="в" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+          <mxGeometry x="40" y="50" width="840" height="2260" as="geometry">
+            <mxRectangle x="40" y="50" width="100" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PQDEgTjOGFEBHPcHPmps-101" value="Поля" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="PQDEgTjOGFEBHPcHPmps-68" vertex="1">
@@ -21,8 +21,10 @@
         <mxCell id="PQDEgTjOGFEBHPcHPmps-104" value="State (Float)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="PQDEgTjOGFEBHPcHPmps-101" vertex="1">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PQDEgTjOGFEBHPcHPmps-110" value="Редактирование&amp;nbsp; кода" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="PQDEgTjOGFEBHPcHPmps-68" vertex="1">
-          <mxGeometry x="240" y="40" width="450" height="390" as="geometry" />
+        <mxCell id="PQDEgTjOGFEBHPcHPmps-110" value="вв" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="PQDEgTjOGFEBHPcHPmps-68" vertex="1">
+          <mxGeometry x="240" y="40" width="450" height="390" as="geometry">
+            <mxRectangle x="240" y="40" width="40" height="150" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="PQDEgTjOGFEBHPcHPmps-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="PQDEgTjOGFEBHPcHPmps-110" source="PQDEgTjOGFEBHPcHPmps-112" target="PQDEgTjOGFEBHPcHPmps-114" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -62,10 +64,18 @@
           <mxGeometry x="320.00000000000006" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PQDEgTjOGFEBHPcHPmps-127" value="Исполнение Кода" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="PQDEgTjOGFEBHPcHPmps-68" vertex="1">
-          <mxGeometry x="240" y="475" width="450" height="465" as="geometry" />
+          <mxGeometry x="240" y="490" width="450" height="150" as="geometry">
+            <mxRectangle x="240" y="490" width="40" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Jj1kp_gW38Pqj7xpFes-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="PQDEgTjOGFEBHPcHPmps-127" source="PQDEgTjOGFEBHPcHPmps-129" target="8Jj1kp_gW38Pqj7xpFes-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="PQDEgTjOGFEBHPcHPmps-129" value="Строчки кода" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="PQDEgTjOGFEBHPcHPmps-127" vertex="1">
           <mxGeometry x="320" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8Jj1kp_gW38Pqj7xpFes-26" value="По строчное исполнение" style="whiteSpace=wrap;html=1;" vertex="1" parent="PQDEgTjOGFEBHPcHPmps-127">
+          <mxGeometry x="140" y="20" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PQDEgTjOGFEBHPcHPmps-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="PQDEgTjOGFEBHPcHPmps-121" target="PQDEgTjOGFEBHPcHPmps-96" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -81,7 +91,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1200" y="800" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1200" y="800" />
+              <mxPoint x="1540" y="590" />
             </Array>
           </mxGeometry>
         </mxCell>
